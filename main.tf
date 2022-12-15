@@ -12,8 +12,8 @@ terraform {
 
 provider "aws" {
   region = "ap-south-1"
-  ACCESS_KEY=var.ACCESS_KEY
-  SECRET_KEY=var.SECRET_KEY
+  access_key=var.ACCESS_KEY
+  secret_key=var.SECRET_KEY
 }
   
 resource "aws_instance" "example" {
