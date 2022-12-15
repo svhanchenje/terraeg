@@ -1,3 +1,15 @@
+terraform {
+  cloud {
+    organization = "sv8"
+    hostname = "app.terraform.io" # Optional; defaults to app.terraform.io
+
+    workspaces {
+      tags = ["myterra", "source:cli"]
+    }
+  }
+}
+
+
 provider "aws" {
   region = "ap-south-1"
 }
