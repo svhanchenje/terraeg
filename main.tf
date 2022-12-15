@@ -14,10 +14,12 @@ provider "aws" {
   region = "ap-south-1"
   ACCESS_KEY=var.ACCESS_KEY
   SECRET_KEY=var.SECRET_KEY
+}
   
 resource "aws_instance" "example" {
   ami           =  "ami-074dc0a6f6c764218"
   instance_type = "t2.micro"
+}
 
 tags = {
     Name = "terraform-example"
