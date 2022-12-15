@@ -20,11 +20,6 @@ resource "aws_instance" "example" {
   ami           =  "ami-074dc0a6f6c764218"
   instance_type = "t2.micro"
 }
-
-tags = {
-    Name = "terraform-example"
-  }
-
   
   variable "ACCESS_KEY" {
   description = "The port the server will use for HTTP requests"
